@@ -17,9 +17,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 200px;
+            height: 100px;
             flex-direction: column; /* 세로 정렬 */
-            margin-top: 100px;
+            /* margin-top: 100px; */
         }
         .button{
             width: 200px;
@@ -42,6 +42,37 @@
         span{
             background-color: bisque;
         }
+        body{
+            background-color: bisque;
+        }
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            width: 80vw;
+            height: 70vh;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* gap: 40px; */
+            }
+
+        hr{
+            width: 90%;
+        }
+        body {
+                background-color: bisque;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                }
+        h1{
+            font-size: 30px;
+        }
 
         @media (max-width: 768px) {
             .button{
@@ -51,16 +82,24 @@
             }
             p{
                 margin-top: 5px;
+                font-size: 10px;
+            }
+            h1{
+                font-size: 20px;
+            }
+            .container{
+                width: 70vw;
             }
         }
     </style>
 </head>
 <body>
-    <div class="flex-container2">
-        <h1 style="font-size: 30px;">2주차: <span>음식점 메뉴판</span> 만들기</h1>
-        <p>참여자: 조수혁, 주장호, 김혁률, 박준우, 이슬아, 김찬우</p>
-    </div>
-    <hr>
+    <div class="container">
+        <div class="flex-container2">
+            <h1>2주차: <span>음식점 메뉴판</span> 만들기</h1>
+            <p>참여자: 조수혁, 주장호, 김혁률, 박준우, 이슬아, 김찬우</p>
+        </div>
+        <hr>
     <div class="flex-container">
         <a href="박준우님.html">
             <div class="button">1</div>
@@ -83,5 +122,8 @@
             <div class="button">6</div>
         </a> 
     </div>
+    </div>
+    
+    
 </body>
 </html>
